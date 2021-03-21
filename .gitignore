@@ -1,1 +1,4 @@
 /C1_data
+*errorFile*
+*.replay
+*/replays
