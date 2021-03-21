@@ -16,7 +16,7 @@ class GameEngine:
         algo_strat2 = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(algo_strat2)
 
-        # z tego mozna wywaloywac wszystkie funkcje algo_strategy np. on_turn() itd
+        # z tego mozna wywolywac wszystkie funkcje algo_strategy np. on_turn() itd
         self.algo1 = algo_strat1.AlgoStrategy()
         self.algo2 = algo_strat2.AlgoStrategy()
         with open(config) as json_file:
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     # zeby dalo sie gamelib zaimportowac
     gamelib_path1 = file_dir + "\\" + algo1  if is_windows else file_dir + "/" + algo1  
     sys.path.insert(1, gamelib_path1)
-    gamelib_path2 = file_dir + "\\" + algo2  if is_windows else file_dir + "/" + algo1  
+    gamelib_path2 = file_dir + "\\" + algo2  if is_windows else file_dir + "/" + algo2  
     sys.path.insert(1, gamelib_path2)
 
 
